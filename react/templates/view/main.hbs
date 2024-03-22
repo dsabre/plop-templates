@@ -1,0 +1,18 @@
+import { FC } from 'react';
+{{#if styled}}
+import styles from './{{properCase name}}View.module.css';
+{{/if}}
+
+interface {{properCase name}}ViewProps {}
+
+const {{properCase name}}View: FC<{{properCase name}}ViewProps> = () => (
+  {{#if styled}}
+  <div className={styles.{{properCase name}}View}>
+  {{else}}
+  <div>
+  {{/if}}
+    {{properCase name}}View Component
+  </div>
+);
+
+export default {{properCase name}}View;

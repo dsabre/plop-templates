@@ -1,0 +1,18 @@
+import { FC } from 'react';
+{{#if styled}}
+import styles from './{{properCase name}}.module.css';
+{{/if}}
+
+interface {{properCase name}}Props {}
+
+const {{properCase name}}: FC<{{properCase name}}Props> = () => (
+  {{#if styled}}
+  <div className={styles.{{properCase name}} }>
+  {{else}}
+  <div>
+  {{/if}}
+    {{properCase name}} Component
+  </div>
+);
+
+export default {{properCase name}};

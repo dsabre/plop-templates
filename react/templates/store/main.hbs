@@ -1,0 +1,15 @@
+import { create } from 'zustand'
+
+interface {{properCase name}}State {
+    bears: number
+    increasePopulation: () => void
+    removeAllBears: () => void
+}
+
+const use{{properCase name}}Store = create<{{properCase name}}State>((set) => ({
+    bears: 0,
+    increasePopulation: () => set((state) => ({ bears: state.bears + 1 })),
+    removeAllBears: () => set({ bears: 0 })
+}))
+
+export default use{{properCase name}}Store
