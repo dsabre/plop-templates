@@ -24,7 +24,7 @@ pnpm add -D plop
 
 ## Configuration
 
-Add this to package,json
+1. Add this to package,json
 
 ```json
 {
@@ -35,6 +35,8 @@ Add this to package,json
     ...
 }
 ```
+
+2. copy the contents of one of these folders to the root of your project
 
 ---
 
